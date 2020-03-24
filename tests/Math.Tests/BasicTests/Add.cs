@@ -19,6 +19,7 @@ namespace Math.Tests.BasicTests
         private static IEnumerable<TestCaseData> Two_summands___correct_sum_TestCases()
         {
             yield return new TestCaseData(3, 4).Returns(7);
+            yield return new TestCaseData(-1, 1).Returns(0);
         }
     }
 }
