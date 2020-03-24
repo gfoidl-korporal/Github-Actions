@@ -26,6 +26,6 @@ jobs:
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
           MERGE_LABELS: "automerge"
-          MERGE_REMOVE_LABELS:  "automerge"
+          #MERGE_REMOVE_LABELS:  "automerge"        # https://github.com/pascalgn/automerge-action/issues/56
           MERGE_METHOD: "squash"
           MERGE_DELETE_BRANCH: "true"
