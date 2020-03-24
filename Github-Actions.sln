@@ -35,6 +35,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "jobs", "jobs", "{3B2084EC-F
 		.azure\pipelines\jobs\build_and_test.yml = .azure\pipelines\jobs\build_and_test.yml
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{B227D9B0-065C-48B4-AB1C-45802AFE851E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{211DBAE4-F457-408B-A938-FC000060E220}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\merge-bot.yml = .github\workflows\merge-bot.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -79,6 +86,8 @@ Global
 		{B73F5FE7-6E15-4EA8-A039-659E08E192A0} = {58BAE3F3-391A-4BE9-B5DD-F88DC51A20BA}
 		{A734A909-B12D-405A-9A86-E0B3E0F53407} = {B73F5FE7-6E15-4EA8-A039-659E08E192A0}
 		{3B2084EC-F356-4023-83DF-F99B05BDD17A} = {A734A909-B12D-405A-9A86-E0B3E0F53407}
+		{B227D9B0-065C-48B4-AB1C-45802AFE851E} = {58BAE3F3-391A-4BE9-B5DD-F88DC51A20BA}
+		{211DBAE4-F457-408B-A938-FC000060E220} = {B227D9B0-065C-48B4-AB1C-45802AFE851E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C38D3FE6-FC0F-4BE3-9850-0451A2A38EE9}
