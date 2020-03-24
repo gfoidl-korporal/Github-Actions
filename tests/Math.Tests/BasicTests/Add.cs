@@ -1,18 +1,24 @@
-﻿using NUnit.Framework;
+﻿using System.Collections.Generic;
+using NUnit.Framework;
 
 namespace Math.Tests.BasicTests
 {
     [TestFixture]
     public class Add
     {
-        [Test]
-        public void Two_summands___correct_sum()
+        [Test, TestCaseSource(nameof(Two_summands___correct_sum_TestCases))]
+        public int Two_summands___correct_sum(int a, int b)
         {
             var sut = new Basic();
 
-            int actual = sut.Add(3, 8);
+            int actual = sut.Add(a, b);
 
-            Assert.AreEqual(11, actual);
+            return actual;
+        }
+        //---------------------------------------------------------------------
+        private static IEnumerable<TestCaseData> Two_summands___correct_sum_TestCases()
+        {
+            yield return new TestCaseData(3, 4).Returns(7);
         }
     }
 }
